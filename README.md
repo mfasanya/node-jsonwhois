@@ -8,17 +8,17 @@ NodeJS & Unirest.
 
 ## Installing
 
- ```
-    npm install jsonwhois
+ ``` sh
+ $   npm install jsonwhois
  ```
 ## Configuring
 
- ``` node
+ ``` js
     var JsonWhois = require('../index.js').apiKey('API KEY');
  ```
 # Usage
 
-  ``` node
+  ``` js
     JsonWhois.whois("google.com", function(res){
         console.log(res);
     });
@@ -26,7 +26,6 @@ NodeJS & Unirest.
     JsonWhois.screenshot("google.com", function(res){
         console.log(res);
     });
-
   ```
 
 And thats it!
