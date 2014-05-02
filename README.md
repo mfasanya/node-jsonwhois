@@ -14,7 +14,7 @@ NodeJS & Unirest.
 ## Configuring
 
  ``` js
-    var JsonWhois = require('../index.js').apiKey('API KEY');
+    var JsonWhois = require('jsonwhois').apiKey('API KEY');
  ```
 # Usage
 
