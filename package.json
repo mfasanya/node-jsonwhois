@@ -1,6 +1,6 @@
 {
-  "name": "node-jsonwhois",
-  "version": "0.0.0",
+  "name": "jsonwhois",
+  "version": "1.0.2",
   "description": "A NodeJS library for the JsonWhois API.",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mfasanya/node-jsonwhois/issues"
   },
-  "homepage": "https://github.com/mfasanya/node-jsonwhois"
+  "homepage": "https://github.com/mfasanya/node-jsonwhois",
+  "dependencies": {
+    "unirest": "^0.2.6"
+  }
 }
