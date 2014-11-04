@@ -9,7 +9,7 @@ JsonWhois = {
     whois : function(domain, done){
         unirest.get(this.base + 'whois')
             .headers({ 
-                'Accept': 'application/json' 
+                'Accept': 'application/json', 
                 'Authorization': 'Token token=" ' + this.apiKey + ' "'
             })
 
@@ -23,10 +23,12 @@ JsonWhois = {
     },
     screenshot: function(domain, done){
         unirest.get(this.base + 'screenshot')
-            .headers({ 'Accept': 'application/json' })
+            .headers({ 
+                'Accept': 'application/json',
+                'Authorization': 'Token token=" ' + this.apiKey + ' "'
+            })
 
             .query({
-                "apiKey": this.apiKey,
                 "domain": domain
             })
 
