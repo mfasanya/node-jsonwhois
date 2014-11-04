@@ -3,15 +3,17 @@ var unirest = require('unirest');
 JsonWhois = {
     apiKey: function (key){
         this.apiKey = key;
-        this.base = "http://jsonwhois.com/api/";
+        this.base = "http://jsonwhois.com/api/v1";
         return module.exports;
     },
     whois : function(domain, done){
         unirest.get(this.base + 'whois')
-            .headers({ 'Accept': 'application/json' })
+            .headers({ 
+                'Accept': 'application/json' 
+                'Authorization': 'Token token=" ' + this.apiKey + ' "'
+            })
 
             .query({
-                "apiKey": this.apiKey,
                 "domain": domain
             })
 
